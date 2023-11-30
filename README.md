@@ -5,6 +5,10 @@
 <br/>
 하늘에서 바라보실 우리 할머니를 위해...풀스택 개발자 손자가 최선을 다해서 만들 생각입니다.
 
+<br/>
+위 프로젝트는 <b>GNU Affero General Public License v3.0</b>에 의해 철저한 저작권법 보호를 받습니다.
+
+
 초기 기획서 : https://www.notion.so/dhxogns920/33902f16af8541ebbb052e6caa2d4cfd?pvs=4
 
 
