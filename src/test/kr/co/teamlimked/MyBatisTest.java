@@ -1,4 +1,4 @@
-package kr.co.teamlimked;
+package kr.co.magnolia;
 
 import javax.inject.Inject;
 

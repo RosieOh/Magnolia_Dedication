@@ -9,31 +9,31 @@
         </layout>
     </appender>
 
-    <logger name="kr.co.teamlimked.controller">
+    <logger name="kr.co.magnolia.controller">
         <level value="info" />
     </logger>
 
-    <logger name="kr.co.teamlimked.dao">
+    <logger name="kr.co.magnolia.dao">
         <level value="info" />
     </logger>
 
-    <logger name="kr.co.teamlimked.dto">
+    <logger name="kr.co.magnolia.dto">
         <level value="info" />
     </logger>
 
-    <logger name="kr.co.teamlimked.service">
+    <logger name="kr.co.magnolia.service">
         <level value="info" />
     </logger>
 
-    <logger name="kr.co.teamlimked.util">
+    <logger name="kr.co.magnolia.util">
         <level value="info" />
     </logger>
 
-    <logger name="kr.co.teamlimked.test">
+    <logger name="kr.co.magnolia.test">
         <level value="info" />
     </logger>
 
-    <logger name="kr.co.teamlimked">
+    <logger name="kr.co.magnolia">
         <level value="info" />
     </logger>
 

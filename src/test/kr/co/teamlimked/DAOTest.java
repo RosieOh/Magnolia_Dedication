@@ -1,6 +1,6 @@
-package kr.co.teamlimked;
+package kr.co.magnolia;
 
-import kr.co.teamlimked.dto.Sample;
+import kr.co.magnolia.dto.Sample;
 import org.apache.ibatis.session.SqlSession;
 import org.junit.Test;
 import org.junit.runner.RunWith;

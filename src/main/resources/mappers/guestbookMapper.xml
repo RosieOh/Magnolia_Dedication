@@ -2,11 +2,11 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="guestbook">
 	<!-- 자료실 목록 -->
-	<select id="guestbookList" resultType="kr.co.teamlimked.dto.GuestBook">
+	<select id="guestbookList" resultType="kr.co.magnolia.dto.GuestBook">
 		select * from guestbook order by regdate desc
 	</select>
 	<!-- 글 상세보기 -->
-	<select id="guestbookDetail" resultType="kr.co.teamlimked.dto.GuestBook">
+	<select id="guestbookDetail" resultType="kr.co.magnolia.dto.GuestBook">
 		select * from guestbook where articleno=#{articleno}
 	</select>
 	<!-- 글 수 카운트 -->

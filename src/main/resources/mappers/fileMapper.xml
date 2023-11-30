@@ -2,15 +2,15 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="fileboard">
 	<!-- 파일 목록 -->
-	<select id="fileList" resultType="kr.co.teamlimked.dto.FileDTO">
+	<select id="fileList" resultType="kr.co.magnolia.dto.FileDTO">
 		select * from fileobj order by uploaddate desc, no asc
 	</select>
 	<!-- 파일 목록 -->
-	<select id="fileGroupList" resultType="kr.co.teamlimked.dto.FileDTO">
+	<select id="fileGroupList" resultType="kr.co.magnolia.dto.FileDTO">
 		select * from fileobj where postno=#{postNo}
 	</select>
 	<!-- 파일 상세보기 -->
-	<select id="fileDetail" resultType="kr.co.teamlimked.dto.FileDTO">
+	<select id="fileDetail" resultType="kr.co.magnolia.dto.FileDTO">
 		select * from fileobj where no=#{no}
 	</select>
 	<!-- 파일 수 카운트 -->
@@ -30,15 +30,15 @@
 		delete from fileobj where no=#{no}
 	</delete>
 	<!-- 파일 자료실 목록 -->
-	<select id="fileboardList" resultType="kr.co.teamlimked.dto.FileBoard">
+	<select id="fileboardList" resultType="kr.co.magnolia.dto.FileBoard">
 		select * from fileboard order by postno desc
 	</select>
 	<!-- 파일 자료 상세보기 -->
-	<select id="fileboardDetail" resultType="kr.co.teamlimked.dto.FileBoard">
+	<select id="fileboardDetail" resultType="kr.co.magnolia.dto.FileBoard">
 		select * from fileboard where postno=#{postNo}
 	</select>
 	<!-- 파일 자료 상세보기 -->
-	<select id="latestFileboard" resultType="kr.co.teamlimked.dto.FileBoard">
+	<select id="latestFileboard" resultType="kr.co.magnolia.dto.FileBoard">
 		select * from fileboard order by postno desc limit 0,1
 	</select>
 	<!-- 파일 자료 추가 -->

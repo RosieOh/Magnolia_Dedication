@@ -4,6 +4,6 @@
         "http://mybatis.org/dtd/mybatis-3-config.dtd">
 <configuration>
     <typeAliases>
-        <package name="kr.co.teamlimked" />
+        <package name="kr.co.magnolia" />
     </typeAliases>
 </configuration>
