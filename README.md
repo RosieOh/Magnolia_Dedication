@@ -14,6 +14,43 @@
 <br/>
 👦 : 개발자 손자 오레오가 기능 추가할 때마다 사용하는 오레오 이모티콘
 
+</p>
+
+|      오태훈                            |                                                       
+|:--------------------------------------:|
+|                                        | 
+| [@RosieOh](https://github.com/rosieoh) |
+
+
+## 기술 스택
+
+### 📚 Tech Stack 
+#### 💻 Development
+<img src="https://skillicons.dev/icons?i=java,spring,mysql,javascript,jquery,react,express& perline="/>
+
+#### ⌛ Developed Period
+##### 2023.11.23 ~ 진행중
+
+
+<br>
+
+### 💡 웹사이트 기능 소개
+> 회원 기능(토큰 권한으로 가족들만 회원가입 가능
+- 회원가입 및 로그인, 아이디 찾기, 비밀번호 찾기
+
+> 커뮤니티
+- 공지사항, 자유게시판, FAQ, 자료실(사진 업로드용), 하고싶은 말 게시판
+
+> 관리자(오태훈만 가능 - 유지보수 권한 : 오태훈
+- 회원관리, 공지사항 관리, FAQ관리, 자유게시판관리
+
+> 고객센터
+- 피드백
+- 오시는 길
+
+<br>
+
+
 ## 💡 Commit Convention
 
 |       Tags       |               Explanation               |
