@@ -9,31 +9,31 @@
         </layout>
     </appender>
 
-    <logger name="kr.co.teaspoon.controller">
+    <logger name="kr.co.teamlimked.controller">
         <level value="info" />
     </logger>
 
-    <logger name="kr.co.teaspoon.dao">
+    <logger name="kr.co.teamlimked.dao">
         <level value="info" />
     </logger>
 
-    <logger name="kr.co.teaspoon.dto">
+    <logger name="kr.co.teamlimked.dto">
         <level value="info" />
     </logger>
 
-    <logger name="kr.co.teaspoon.service">
+    <logger name="kr.co.teamlimked.service">
         <level value="info" />
     </logger>
 
-    <logger name="kr.co.teaspoon.util">
+    <logger name="kr.co.teamlimked.util">
         <level value="info" />
     </logger>
 
-    <logger name="kr.co.teaspoon.test">
+    <logger name="kr.co.teamlimked.test">
         <level value="info" />
     </logger>
 
-    <logger name="kr.co.teaspoon">
+    <logger name="kr.co.teamlimked">
         <level value="info" />
     </logger>
 

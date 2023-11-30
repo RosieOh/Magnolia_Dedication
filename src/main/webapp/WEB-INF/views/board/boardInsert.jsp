@@ -1,9 +1,8 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"  %>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 <%@ taglib prefix="fn" uri = "http://java.sun.com/jsp/jstl/functions"%>
-<c:set var="path1" value="/pro3_war" />
+<c:set var="path1" value="${pageContext.servletContext.contextPath }"  />
 <!DOCTYPE html>
 <html>
 <head>
@@ -13,6 +12,7 @@
 	<title>글 쓰기</title>
     <!-- 헤드 부분 인클루드 -->
     <jsp:include page="../include/head.jsp"></jsp:include>
+	<script src="https://cdn.ckeditor.com/4.20.0/standard/ckeditor.js"></script>
 </head>
 <body>
 	<header id="header">
@@ -38,6 +38,9 @@
 			      			<th style="background-color:#dcdcdc">글 내용</th>
 			      			<td>
 			      				<textarea name="content" id="content" placeholder="내용 입력" rows="8" cols="100" maxlength="800" required></textarea>
+								<script>
+									CKEDITOR.replace('content',	{filebrowserUploadUrl:'${path1}/notice/imageUpload.do'});
+								</script>
 			      			</td>
 			      		</tr>
 			      		<tr>

@@ -3,10 +3,10 @@
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="sample">
-    <select id="sampleList" resultType="kr.co.teaspoon.dto.Sample">
+    <select id="sampleList" resultType="kr.co.teamlimked.dto.Sample">
         select * from sample
     </select>
-    <select id="sampleDetail" resultType="kr.co.teaspoon.dto.Sample">
+    <select id="sampleDetail" resultType="kr.co.teamlimked.dto.Sample">
         select * from sample where no=#{no}
     </select>
     <select id="sampleCount" resultType="integer">

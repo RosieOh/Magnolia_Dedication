@@ -1,5 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-         pageEncoding="UTF-8"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"  %>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 <%@ taglib prefix="fn" uri = "http://java.sun.com/jsp/jstl/functions"%>
@@ -11,7 +10,7 @@
     <title>테스트 메뉴</title>
 </head>
 <body>
-<c:set var="path0" value="/pro3_war" />
+<c:set var="path1" value="${pageContext.servletContext.contextPath }" />
 <ul class="list">
     <li><a href="${path1}/sample/main.do">RequestMapping 방식 : Get</a></li>
     <li><a href="${path1}/sample/get1.do?id=kkt&pw=1234">GetMapping 방식 : request+model</a></li>

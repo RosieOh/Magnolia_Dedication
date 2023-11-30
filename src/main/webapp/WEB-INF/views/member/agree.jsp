@@ -1,9 +1,8 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-         pageEncoding="UTF-8"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"  %>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 <%@ taglib prefix="fn" uri = "http://java.sun.com/jsp/jstl/functions"%>
-<c:set var="path1" value="/pro3_war" />
+<c:set var="path1" value="${pageContext.servletContext.contextPath }"  />
 <!DOCTYPE html>
 <html>
 <head>
@@ -20,23 +19,19 @@
     </style>
 </head>
 <body>
+<div class="container" style="padding-bottom: 100px;">
+    <jsp:include page="../include/hd.jsp"/>
+</div>
+<nav class="breadcrumb has-succeeds-separator is-medium is-right mt-3 p-4" style="background: #f1f4f9" aria-label="breadcrumbs">
+    <ul class="mr-5">
+        <li><a href="${path1}"><i class="xi-home is-size-3"></i></a></li>
+        <li><a>커뮤니티</a></li>
+        <li><a href="${path1}/faq/list.do">자주 묻는 질문</a></li>
+    </ul>
+    <p class="title has-text-centered mt-1 mb-2">자주 묻는 질문</p>
+    <%--    <h3 class="contents">고객님들과 학생들이 자주 묻는 질문들을 한 눈에 볼 수 있는 해법의 FAQ입니다.</h3>--%>
+</nav>
 <div class="container is-fullhd">
-    <!-- 헤더 부분 인클루드 -->
-    <jsp:include page="../include/hd.jsp"></jsp:include>
-    <figure class="visual" id="vs1">
-        <ul class="imgbox">
-            <li class="hero is-medium is-link">
-                <div class="hero-body">
-                    <p class="title">
-                        Medium hero
-                    </p>
-                    <p class="subtitle">
-                        Medium subtitle
-                    </p>
-                </div>
-            </li>
-        </ul>
-    </figure>
     <div class="content" id="contents">
     <h2 class="title">회원 약관 동의</h2>
     <article class="agree_fr">
@@ -951,9 +946,8 @@
         }
     </script>
 </div>
-
-    <!-- 푸터 부분 인클루드 -->
-    <jsp:include page="../include/ft.jsp"></jsp:include>
 </div>
+<!-- 푸터 부분 인클루드 -->
+<jsp:include page="../include/ft.jsp"></jsp:include>
 </body>
 </html>

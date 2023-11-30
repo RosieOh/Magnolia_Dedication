@@ -1,22 +1,9 @@
-create database teaspoon;
+create database teamlimked;
 
-USE teaspoon;
+USE teamlimked;
 
-CREATE table sample(NO INTEGER AUTO_INCREMENT PRIMARY KEY,
-NAME VARCHAR(100));
- 
- 
-INSERT INTO sample VALUES (DEFAULT, '김기태');
-INSERT INTO sample VALUES (DEFAULT, '한선');
-INSERT INTO sample VALUES (DEFAULT, '이은영');
-INSERT INTO sample VALUES (DEFAULT, '서광');
-INSERT INTO sample VALUES (DEFAULT, '이소윤');
-
-COMMIT;
-
-SELECT * FROM sample;
-
-create table board(seq int AUTO_INCREMENT primary key,
+create table board(
+	seq int AUTO_INCREMENT primary key,
 	title varchar(100) not null,
 	content varchar(1000) not null,
 	nickname varchar(20),
@@ -36,7 +23,7 @@ insert into board values(default, '샘플 글 제목6입니다.', '여기는 샘
 
 SELECT * FROM board;
 
-UPDATE board SET title='샘플 글 제목7입니다.', content='여기는 샘플 글7에 대한 내용입니다.' WHERE seq=6; 
+UPDATE board SET title='샘플 글 제목7입니다.', content='여기는 샘플 글7에 대한 내용입니다.' WHERE seq=6;
 
 
 CREATE TABLE member(id VARCHAR(20) PRIMARY KEY,
@@ -56,19 +43,19 @@ visited int default 0
 DESC MEMBER;
 
 INSERT INTO member VALUES ('admin', '1234', '관리자',
-'admin@teaspoon.co.kr', '0212341234', 
+'admin@teamlimked.co.kr', '0212341234',
 '서울특별시 금천구 디지털로9길 23 (마리오2 패션타워)',
 '11층 1108호', '08511', DEFAULT, '2023-12-25',
 DEFAULT, DEFAULT);
-INSERT INTO member VALUES ('kim', '4321', '김천재',
-'kim@teaspoon.co.kr', '01043214321', 
+INSERT INTO member VALUES ('dhxogns920', '1234', '오태훈',
+'dhxogns920@teamlimked.co.kr', '010-7329-7484',
 '서울특별시 금천구 가산로9길 54',
 '천재교과서', '08513', DEFAULT, '1978-12-25',
 DEFAULT, DEFAULT);
 COMMIT;
 
 UPDATE member SET pw='$2a$10$TMTp1e7vW8nx7l7B49a2d.0robqb2qUFTuBPntKHRvVILg0CmBkqW' WHERE id='admin';
-UPDATE member SET pw='$2a$10$mpr36CRQpp903gPf.f76auK1CYzFkq.LD65JsGzdrBCiOluBotWYW' WHERE id='kim';
+UPDATE member SET pw='$2a$10$TMTp1e7vW8nx7l7B49a2d.0robqb2qUFTuBPntKHRvVILg0CmBkqW' WHERE id='dhxogns920';
 SELECT * FROM member;
 
 create table free(bno INT AUTO_INCREMENT PRIMARY KEY,  -- 글번호
@@ -85,7 +72,7 @@ DESC free;
 CREATE TABLE fileinfo(NO INT AUTO_INCREMENT PRIMARY KEY,  -- 번호
 articleno varchar(45) DEFAULT NULL,	-- 글번호
 saveFolder varchar(45) DEFAULT NULL,	-- 저장 디렉토리
-originFile varchar(45) DEFAULT NULL,	-- 
+originFile varchar(45) DEFAULT NULL,	--
 saveFile varchar(45) DEFAULT NULL
 );
 
@@ -117,8 +104,6 @@ CREATE TABLE fileboard (
 	visited INT DEFAULT 0   -- 조회수
 );
 
-DESC fileobj;
-
 DESC fileboard;
 
 SELECT * FROM fileobj;
@@ -128,4 +113,3 @@ UPDATE fileboard SET visited=0 WHERE postno=1;
 
 ALTER TABLE fileboard MODIFY COLUMN visited INT DEFAULT 0;
 
-  

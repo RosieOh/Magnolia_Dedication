@@ -1,9 +1,8 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"  %>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 <%@ taglib prefix="fn" uri = "http://java.sun.com/jsp/jstl/functions"%>
-<c:set var="path1" value="/pro3_war" />
+<c:set var="path1" value="${pageContext.servletContext.contextPath }"  />
 <!DOCTYPE html>
 <html>
 <head>
@@ -15,25 +14,25 @@
     <jsp:include page="../include/head.jsp"></jsp:include>
 	<!-- <script src="https://cdn.ckeditor.com/4.20.0/standard/ckeditor.js"></script> -->
 	<script type="text/javascript" src="${path1 }/resources/ckeditor/ckeditor.js"></script>
+	<style>
+		.title { padding-top:36px; padding-bottom:20px; }
+		.agree_fr { width: 900px; white-space:pre-wrap; margin: 10px auto;
+			padding: 24px; border:2px solid #eee; height:600px; overflow-y:auto; }
+	</style>
 </head>
 <body>
+<div class="container" style="padding-bottom: 100px;">
+	<jsp:include page="../include/hd.jsp"/>
+</div>
+<nav class="breadcrumb has-succeeds-separator is-medium is-right mt-3 p-4" style="background: #f1f4f9" aria-label="breadcrumbs">
+	<ul class="mr-5">
+		<li><a href="${path1}"><i class="xi-home is-size-3"></i></a></li>
+		<li><a>커뮤니티</a></li>
+		<li><a href="${path1}/faq/list.do">자주 묻는 질문</a></li>
+	</ul>
+	<p class="title has-text-centered mt-1 mb-2">자주 묻는 질문</p>
+</nav>
 <div class="container is-fullhd">
-	<!-- 헤더 부분 인클루드 -->
-	<jsp:include page="../include/hd.jsp"></jsp:include>
-	<figure class="visual" id="vs1">
-		<ul class="imgbox">
-			<li class="hero is-medium is-link">
-				<div class="hero-body">
-					<p class="title">
-						Medium hero
-					</p>
-					<p class="subtitle">
-						Medium subtitle
-					</p>
-				</div>
-			</li>
-		</ul>
-	</figure>
 	<div class="content" id="contents">
 	    <div class="row column text-center">
 	      <h2 class="h1">자유게시판 글쓰기</h2>
@@ -69,8 +68,8 @@
 	      </div>
 	    </div>
 	</div>
-	<!-- 푸터 부분 인클루드 -->
-	<jsp:include page="../include/ft.jsp"></jsp:include>
 </div>
+<!-- 푸터 부분 인클루드 -->
+<jsp:include page="../include/ft.jsp"></jsp:include>
 </body>
 </html>

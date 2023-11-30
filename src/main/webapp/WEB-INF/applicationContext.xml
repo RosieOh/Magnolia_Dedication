@@ -19,7 +19,7 @@
         <!-- spring-jdbc-5.3.20.jar 안의 드라이버매니저 연결 -->
         <bean id="dataSource" class="org.springframework.jdbc.datasource.SimpleDriverDataSource">
                 <property name="driverClass" value="org.mariadb.jdbc.Driver" />
-                <property name="url" value="jdbc:mariadb://localhost:3306/teaspoon" />
+                <property name="url" value="jdbc:mariadb://localhost:3306/teamlimked" />
                 <property name="username" value="root" />
                 <property name="password" value="1234" />
         </bean>
@@ -42,18 +42,16 @@
         </bean>
 
         <context:annotation-config />
-        <bean id="sampleService" class="kr.co.teaspoon.service.SampleServiceImpl"/>
-        <bean id="sampleDAO" class="kr.co.teaspoon.dao.SampleDAOImpl"/>
-        <bean id="boardService" class="kr.co.teaspoon.service.BoardServiceImpl"/>
-        <bean id="boardDAO" class="kr.co.teaspoon.dao.BoardDAOImpl"/>
-        <bean id="memberService" class="kr.co.teaspoon.service.MemberServiceImpl"/>
-        <bean id="memberDAO" class="kr.co.teaspoon.dao.MemberDAOImpl"/>
-        <bean id="freeService" class="kr.co.teaspoon.service.FreeServiceImpl"/>
-        <bean id="freeDAO" class="kr.co.teaspoon.dao.FreeDAOImpl"/>
-        <bean id="guestBookService" class="kr.co.teaspoon.service.GuestBookServiceImpl"/>
-        <bean id="guestBookDAO" class="kr.co.teaspoon.dao.GuestBookDAOImpl"/>
-        <bean id="fileService" class="kr.co.teaspoon.service.FileServiceImpl"/>
-        <bean id="fileDAO" class="kr.co.teaspoon.dao.FileDAOImpl"/>
+        <bean id="boardService" class="kr.co.teamlimked.service.BoardServiceImpl"/>
+        <bean id="boardDAO" class="kr.co.teamlimked.dao.BoardDAOImpl"/>
+        <bean id="memberService" class="kr.co.teamlimked.service.MemberServiceImpl"/>
+        <bean id="memberDAO" class="kr.co.teamlimked.dao.MemberDAOImpl"/>
+        <bean id="freeService" class="kr.co.teamlimked.service.FreeServiceImpl"/>
+        <bean id="freeDAO" class="kr.co.teamlimked.dao.FreeDAOImpl"/>
+        <bean id="guestBookService" class="kr.co.teamlimked.service.GuestBookServiceImpl"/>
+        <bean id="guestBookDAO" class="kr.co.teamlimked.dao.GuestBookDAOImpl"/>
+        <bean id="fileService" class="kr.co.teamlimked.service.FileServiceImpl"/>
+        <bean id="fileDAO" class="kr.co.teamlimked.dao.FileDAOImpl"/>
 
         <!-- @Transactional 어노테이션 처리 -->
         <tx:annotation-driven transaction-manager="transactionManager" />

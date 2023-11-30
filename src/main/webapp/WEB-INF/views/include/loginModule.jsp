@@ -2,7 +2,7 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"  %>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 <%@ taglib prefix="fn" uri = "http://java.sun.com/jsp/jstl/functions"%>
-<c:set var="path1" value="/pro3_war" />
+<c:set var="path1" value="${pageContext.servletContext.contextPath }" />
 <div class="column is-3">
     <c:if test="${empty sid}">
         <form action="${path1 }/member/loginCheck.do" method="post">
